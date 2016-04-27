@@ -1,0 +1,166 @@
+May 24 12:51:48 TEST postfix/smtpd[7200]: connect from localhost.localdomain[127.0.0.1]
+May 24 12:51:48 TEST postfix/smtpd[7200]: 1746B93F7F: client=localhost.localdomain[127.0.0.1]
+May 24 12:51:48 TEST postfix/cleanup[7202]: 1746B93F7F: message-id=<1225576475.20060524014520@lakaka.net>
+May 24 12:51:48 TEST postfix/qmgr[7086]: 1746B93F7F: from=<deev@lakaka.net>, size=5649, nrcpt=1 (queue active)
+May 24 12:51:53 TEST postfix/smtp[7203]: 1746B93F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=5, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 12:51:54 TEST postfix/smtp[7203]: 1746B93F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=5, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 12:51:54 TEST postfix/cleanup[7202]: DA19593F80: message-id=<20060524065154.DA19593F80@TEST.lab.ru>
+May 24 12:51:54 TEST postfix/qmgr[7086]: DA19593F80: from=<>, size=3978, nrcpt=1 (queue active)
+May 24 12:51:54 TEST postfix/qmgr[7086]: 1746B93F7F: removed
+May 24 12:51:55 TEST postfix/qmgr[7086]: DA19593F80: removed
+May 24 12:51:56 TEST postfix/smtpd[7200]: disconnect from localhost.localdomain[127.0.0.1]
+May 24 12:57:04 TEST postfix/smtpd[7208]: connect from localhost.localdomain[127.0.0.1]
+May 24 12:57:04 TEST postfix/smtpd[7208]: 4182593F7F: client=localhost.localdomain[127.0.0.1]
+May 24 12:57:04 TEST postfix/cleanup[7210]: 4182593F7F: message-id=<E1FimDA-0001rE-8g@bestzvit.com>
+May 24 12:57:04 TEST postfix/qmgr[7086]: 4182593F7F: from=<apache@bestzvit.com>, size=5913, nrcpt=1 (queue active)
+May 24 12:57:09 TEST postfix/smtpd[7208]: disconnect from localhost.localdomain[127.0.0.1]
+May 24 12:57:15 TEST postfix/smtp[7211]: 4182593F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=11, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 12:57:16 TEST postfix/smtp[7211]: 4182593F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=11, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 12:57:17 TEST postfix/smtp[7211]: 4182593F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=11, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 12:57:18 TEST postfix/smtp[7211]: 4182593F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=11, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 12:57:19 TEST postfix/cleanup[7210]: 6092493F80: message-id=<20060524065719.6092493F80@TEST.lab.ru>
+May 24 12:57:19 TEST postfix/qmgr[7086]: 6092493F80: from=<>, size=3925, nrcpt=1 (queue active)
+May 24 12:57:19 TEST postfix/qmgr[7086]: 4182593F7F: removed
+May 24 12:57:58 TEST postfix/smtp[7211]: 6092493F80: to=<apache@bestzvit.com>, relay=bestzvit.com[217.20.163.54], delay=43, status=deferred (host bestzvit.com[217.20.163.54] said: 451 Temporary local problem - please try later (in reply to RCPT TO command))
+May 24 12:57:59 TEST postfix/smtp[7211]: 6092493F80: to=<apache@bestzvit.com>, relay=bestzvit.com[217.20.163.54], delay=43, status=deferred (host bestzvit.com[217.20.163.54] said: 451 Temporary local problem - please try later (in reply to RCPT TO command))
+May 24 12:58:00 TEST postfix/smtp[7211]: 6092493F80: to=<apache@bestzvit.com>, relay=bestzvit.com[217.20.163.54], delay=43, status=deferred (host bestzvit.com[217.20.163.54] said: 451 Temporary local problem - please try later (in reply to RCPT TO command))
+May 24 13:00:01 TEST postfix/pickup[7085]: F25DD93F81: uid=0 from=<root>
+May 24 13:00:01 TEST postfix/cleanup[7458]: F25DD93F81: message-id=<20060524070001.F25DD93F81@TEST.lab.ru>
+May 24 13:00:02 TEST postfix/qmgr[7086]: F25DD93F81: from=<root@TEST.lab.ru>, size=847, nrcpt=1 (queue active)
+May 24 13:00:02 TEST postfix/pickup[7085]: 0C3F693F84: uid=0 from=<root>
+May 24 13:00:02 TEST postfix/cleanup[7458]: 0C3F693F84: message-id=<20060524070002.0C3F693F84@TEST.lab.ru>
+May 24 13:00:02 TEST postfix/qmgr[7086]: 0C3F693F84: from=<root@TEST.lab.ru>, size=847, nrcpt=1 (queue active)
+May 24 13:00:02 TEST postfix/pickup[7085]: 0ED4593F7F: uid=0 from=<root>
+May 24 13:00:02 TEST postfix/cleanup[7458]: 0ED4593F7F: message-id=<20060524070002.0ED4593F7F@TEST.lab.ru>
+May 24 13:00:02 TEST postfix/qmgr[7086]: 0ED4593F7F: from=<root@TEST.lab.ru>, size=847, nrcpt=1 (queue active)
+May 24 13:17:00 TEST postfix/qmgr[7086]: 6092493F80: from=<>, size=3925, nrcpt=1 (queue active)
+May 24 13:23:05 TEST postfix/smtpd[7485]: connect from localhost.localdomain[127.0.0.1]
+May 24 13:23:05 TEST postfix/smtpd[7485]: D5CE493F7F: client=localhost.localdomain[127.0.0.1]
+May 24 13:23:05 TEST postfix/cleanup[7487]: D5CE493F7F: message-id=<4fa001c67f01$ab0ef341$a789a9c4@ezagenda.com>
+May 24 13:23:06 TEST postfix/qmgr[7086]: D5CE493F7F: from=<kai-yuen@ezagenda.com>, size=14843, nrcpt=1 (queue active)
+May 24 13:23:11 TEST postfix/smtp[7488]: D5CE493F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=6, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 13:23:11 TEST postfix/cleanup[7487]: CCBB893F81: message-id=<20060524072311.CCBB893F81@TEST.lab.ru>
+May 24 13:23:11 TEST postfix/qmgr[7086]: CCBB893F81: from=<>, size=4044, nrcpt=1 (queue active)
+May 24 13:23:11 TEST postfix/qmgr[7086]: D5CE493F7F: removed
+May 24 13:23:14 TEST postfix/smtpd[7485]: disconnect from localhost.localdomain[127.0.0.1]
+May 24 13:23:42 TEST postfix/smtp[7488]: connect to ezagenda.com[202.123.209.182]: Connection timed out (port 25)
+May 24 13:23:42 TEST postfix/smtp[7488]: CCBB893F81: to=<kai-yuen@ezagenda.com>, relay=none, delay=31, status=deferred (connect to ezagenda.com[202.123.209.182]: Connection timed out)
+May 24 13:33:25 TEST postfix/smtpd[7510]: connect from localhost.localdomain[127.0.0.1]
+May 24 13:33:26 TEST postfix/smtpd[7510]: 040FF93F7F: client=localhost.localdomain[127.0.0.1]
+May 24 13:33:26 TEST postfix/cleanup[7512]: 040FF93F7F: message-id=<524701c67f0a$f952e711$85f77d0f@aba.com>
+May 24 13:33:26 TEST postfix/qmgr[7086]: 040FF93F7F: from=<03hsiuwen@aba.com>, size=26502, nrcpt=1 (queue active)
+May 24 13:33:32 TEST postfix/smtp[7513]: 040FF93F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=7, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 13:33:32 TEST postfix/cleanup[7512]: 2B52093F83: message-id=<20060524073332.2B52093F83@TEST.lab.ru>
+May 24 13:33:32 TEST postfix/qmgr[7086]: 2B52093F83: from=<>, size=3993, nrcpt=1 (queue active)
+May 24 13:33:32 TEST postfix/qmgr[7086]: 040FF93F7F: removed
+May 24 13:33:34 TEST postfix/smtpd[7510]: disconnect from localhost.localdomain[127.0.0.1]
+May 24 13:33:34 TEST postfix/smtp[7513]: 2B52093F83: to=<03hsiuwen@aba.com>, orig_to=<03hsiuwen@aba.com>, relay=aba.com[207.19.80.14], delay=2, status=bounced (host aba.com[207.19.80.14] said: 550 Requested action not taken: mailbox unavailable (in reply to RCPT TO command))
+May 24 13:33:35 TEST postfix/qmgr[7086]: 2B52093F83: removed
+May 24 12:51:48 TEST postfix/smtpd[7200]: connect from localhost.localdomain[127.0.0.1]
+May 24 12:51:48 TEST postfix/smtpd[7200]: 1746B93F7F: client=localhost.localdomain[127.0.0.1]
+May 24 12:51:48 TEST postfix/cleanup[7202]: 1746B93F7F: message-id=<1225576475.20060524014520@lakaka.net>
+May 24 12:51:48 TEST postfix/qmgr[7086]: 1746B93F7F: from=<deev@lakaka.net>, size=5649, nrcpt=1 (queue active)
+May 24 12:51:53 TEST postfix/smtp[7203]: 1746B93F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=5, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 12:51:53 TEST postfix/cleanup[7202]: DA19593F80: message-id=<20060524065153.DA19593F80@TEST.lab.ru>
+May 24 12:51:53 TEST postfix/qmgr[7086]: DA19593F80: from=<>, size=3978, nrcpt=1 (queue active)
+May 24 12:51:53 TEST postfix/qmgr[7086]: 1746B93F7F: removed
+May 24 12:51:55 TEST postfix/qmgr[7086]: DA19593F80: removed
+May 24 12:51:56 TEST postfix/smtpd[7200]: disconnect from localhost.localdomain[127.0.0.1]
+May 24 12:57:04 TEST postfix/smtpd[7208]: connect from localhost.localdomain[127.0.0.1]
+May 24 12:57:04 TEST postfix/smtpd[7208]: 4182593F7F: client=localhost.localdomain[127.0.0.1]
+May 24 12:57:04 TEST postfix/cleanup[7210]: 4182593F7F: message-id=<E1FimDA-0001rE-8g@bestzvit.com>
+May 24 12:57:04 TEST postfix/qmgr[7086]: 4182593F7F: from=<apache@bestzvit.com>, size=5913, nrcpt=1 (queue active)
+May 24 12:57:09 TEST postfix/smtpd[7208]: disconnect from localhost.localdomain[127.0.0.1]
+May 24 12:57:15 TEST postfix/smtp[7211]: 4182593F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=11, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 12:57:15 TEST postfix/cleanup[7210]: 6092493F80: message-id=<20060524065715.6092493F80@TEST.lab.ru>
+May 24 12:57:15 TEST postfix/qmgr[7086]: 6092493F80: from=<>, size=3925, nrcpt=1 (queue active)
+May 24 12:57:15 TEST postfix/qmgr[7086]: 4182593F7F: removed
+May 24 13:00:01 TEST postfix/pickup[7085]: F25DD93F81: uid=0 from=<root>
+May 24 13:00:01 TEST postfix/cleanup[7458]: F25DD93F81: message-id=<20060524070001.F25DD93F81@TEST.lab.ru>
+May 24 13:00:02 TEST postfix/qmgr[7086]: F25DD93F81: from=<root@TEST.lab.ru>, size=847, nrcpt=1 (queue active)
+May 24 13:00:02 TEST postfix/pickup[7085]: 0C3F693F84: uid=0 from=<root>
+May 24 13:00:02 TEST postfix/cleanup[7458]: 0C3F693F84: message-id=<20060524070002.0C3F693F84@TEST.lab.ru>
+May 24 13:00:02 TEST postfix/qmgr[7086]: 0C3F693F84: from=<root@TEST.lab.ru>, size=847, nrcpt=1 (queue active)
+May 24 13:00:02 TEST postfix/pickup[7085]: 0ED4593F7F: uid=0 from=<root>
+May 24 13:00:02 TEST postfix/cleanup[7458]: 0ED4593F7F: message-id=<20060524070002.0ED4593F7F@TEST.lab.ru>
+May 24 13:00:02 TEST postfix/qmgr[7086]: 0ED4593F7F: from=<root@TEST.lab.ru>, size=847, nrcpt=1 (queue active)
+May 24 13:17:00 TEST postfix/qmgr[7086]: 6092493F80: from=<>, size=3925, nrcpt=1 (queue active)
+May 24 13:17:37 TEST postfix/smtp[7477]: 6092493F80: to=<apache@bestzvit.com>, relay=bestzvit.com[217.20.163.54], delay=1222, status=deferred (host bestzvit.com[217.20.163.54] said: 451 Temporary local problem - please try later (in reply to RCPT TO command))
+May 24 13:23:05 TEST postfix/smtpd[7485]: connect from localhost.localdomain[127.0.0.1]
+May 24 13:23:05 TEST postfix/smtpd[7485]: D5CE493F7F: client=localhost.localdomain[127.0.0.1]
+May 24 13:23:05 TEST postfix/cleanup[7487]: D5CE493F7F: message-id=<4fa001c67f01$ab0ef341$a789a9c4@ezagenda.com>
+May 24 13:23:06 TEST postfix/qmgr[7086]: D5CE493F7F: from=<kai-yuen@ezagenda.com>, size=14843, nrcpt=1 (queue active)
+May 24 13:23:11 TEST postfix/smtp[7488]: D5CE493F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=6, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 13:23:11 TEST postfix/cleanup[7487]: CCBB893F81: message-id=<20060524072311.CCBB893F81@TEST.lab.ru>
+May 24 13:23:11 TEST postfix/qmgr[7086]: CCBB893F81: from=<>, size=4044, nrcpt=1 (queue active)
+May 24 13:23:11 TEST postfix/qmgr[7086]: D5CE493F7F: removed
+May 24 13:23:14 TEST postfix/smtpd[7485]: disconnect from localhost.localdomain[127.0.0.1]
+May 24 13:23:42 TEST postfix/smtp[7488]: connect to ezagenda.com[202.123.209.182]: Connection timed out (port 25)
+May 24 13:23:42 TEST postfix/smtp[7488]: CCBB893F81: to=<kai-yuen@ezagenda.com>, relay=none, delay=31, status=deferred (connect to ezagenda.com[202.123.209.182]: Connection timed out)
+May 24 13:33:25 TEST postfix/smtpd[7510]: connect from localhost.localdomain[127.0.0.1]
+May 24 13:33:26 TEST postfix/smtpd[7510]: 040FF93F7F: client=localhost.localdomain[127.0.0.1]
+May 24 13:33:26 TEST postfix/cleanup[7512]: 040FF93F7F: message-id=<524701c67f0a$f952e711$85f77d0f@aba.com>
+May 24 13:33:26 TEST postfix/qmgr[7086]: 040FF93F7F: from=<03hsiuwen@aba.com>, size=26502, nrcpt=1 (queue active)
+May 24 13:33:32 TEST postfix/smtp[7513]: 040FF93F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=7, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 13:33:32 TEST postfix/cleanup[7512]: 2B52093F83: message-id=<20060524073332.2B52093F83@TEST.lab.ru>
+May 24 13:33:32 TEST postfix/qmgr[7086]: 2B52093F83: from=<>, size=3993, nrcpt=1 (queue active)
+May 24 13:33:32 TEST postfix/qmgr[7086]: 040FF93F7F: removed
+May 24 13:33:34 TEST postfix/smtpd[7510]: disconnect from localhost.localdomain[127.0.0.1]
+May 24 13:33:35 TEST postfix/qmgr[7086]: 2B52093F83: removed
+May 24 12:51:48 TEST postfix/smtpd[7200]: connect from localhost.localdomain[127.0.0.1]
+May 24 12:51:48 TEST postfix/smtpd[7200]: 1746B93F7F: client=localhost.localdomain[127.0.0.1]
+May 24 12:51:48 TEST postfix/cleanup[7202]: 1746B93F7F: message-id=<1225576475.20060524014520@lakaka.net>
+May 24 12:51:48 TEST postfix/qmgr[7086]: 1746B93F7F: from=<deev@lakaka.net>, size=5649, nrcpt=1 (queue active)
+May 24 12:51:53 TEST postfix/smtp[7203]: 1746B93F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=5, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 12:51:53 TEST postfix/cleanup[7202]: DA19593F80: message-id=<20060524065153.DA19593F80@TEST.lab.ru>
+May 24 12:51:53 TEST postfix/qmgr[7086]: DA19593F80: from=<>, size=3978, nrcpt=1 (queue active)
+May 24 12:51:53 TEST postfix/qmgr[7086]: 1746B93F7F: removed
+May 24 12:51:55 TEST postfix/qmgr[7086]: DA19593F80: removed
+May 24 12:51:56 TEST postfix/smtpd[7200]: disconnect from localhost.localdomain[127.0.0.1]
+May 24 12:57:04 TEST postfix/smtpd[7208]: connect from localhost.localdomain[127.0.0.1]
+May 24 12:57:04 TEST postfix/smtpd[7208]: 4182593F7F: client=localhost.localdomain[127.0.0.1]
+May 24 12:57:04 TEST postfix/cleanup[7210]: 4182593F7F: message-id=<E1FimDA-0001rE-8g@bestzvit.com>
+May 24 12:57:04 TEST postfix/qmgr[7086]: 4182593F7F: from=<apache@bestzvit.com>, size=5913, nrcpt=1 (queue active)
+May 24 12:57:09 TEST postfix/smtpd[7208]: disconnect from localhost.localdomain[127.0.0.1]
+May 24 12:57:15 TEST postfix/smtp[7211]: 4182593F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=11, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 12:57:15 TEST postfix/cleanup[7210]: 6092493F80: message-id=<20060524065715.6092493F80@TEST.lab.ru>
+May 24 12:57:15 TEST postfix/qmgr[7086]: 6092493F80: from=<>, size=3925, nrcpt=1 (queue active)
+May 24 12:57:15 TEST postfix/qmgr[7086]: 4182593F7F: removed
+May 24 12:57:58 TEST postfix/smtp[7211]: 6092493F80: to=<apache@bestzvit.com>, relay=bestzvit.com[217.20.163.54], delay=43, status=deferred (host bestzvit.com[217.20.163.54] said: 451 Temporary local problem - please try later (in reply to RCPT TO command))
+May 24 13:00:01 TEST postfix/pickup[7085]: F25DD93F81: uid=0 from=<root>
+May 24 13:00:01 TEST postfix/cleanup[7458]: F25DD93F81: message-id=<20060524070001.F25DD93F81@TEST.lab.ru>
+May 24 13:00:02 TEST postfix/qmgr[7086]: F25DD93F81: from=<root@TEST.lab.ru>, size=847, nrcpt=1 (queue active)
+May 24 13:00:02 TEST postfix/pickup[7085]: 0C3F693F84: uid=0 from=<root>
+May 24 13:00:02 TEST postfix/cleanup[7458]: 0C3F693F84: message-id=<20060524070002.0C3F693F84@TEST.lab.ru>
+May 24 13:00:02 TEST postfix/qmgr[7086]: 0C3F693F84: from=<root@TEST.lab.ru>, size=847, nrcpt=1 (queue active)
+May 24 13:00:02 TEST postfix/pickup[7085]: 0ED4593F7F: uid=0 from=<root>
+May 24 13:00:02 TEST postfix/cleanup[7458]: 0ED4593F7F: message-id=<20060524070002.0ED4593F7F@TEST.lab.ru>
+May 24 13:00:02 TEST postfix/qmgr[7086]: 0ED4593F7F: from=<root@TEST.lab.ru>, size=847, nrcpt=1 (queue active)
+May 24 13:17:00 TEST postfix/qmgr[7086]: 6092493F80: from=<>, size=3925, nrcpt=1 (queue active)
+May 24 13:23:05 TEST postfix/smtpd[7485]: connect from localhost.localdomain[127.0.0.1]
+May 24 13:23:05 TEST postfix/smtpd[7485]: D5CE493F7F: client=localhost.localdomain[127.0.0.1]
+May 24 13:23:05 TEST postfix/cleanup[7487]: D5CE493F7F: message-id=<4fa001c67f01$ab0ef341$a789a9c4@ezagenda.com>
+May 24 13:23:06 TEST postfix/qmgr[7086]: D5CE493F7F: from=<kai-yuen@ezagenda.com>, size=14843, nrcpt=1 (queue active)
+May 24 13:23:11 TEST postfix/smtp[7488]: D5CE493F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=6, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 13:23:12 TEST postfix/smtp[7488]: D5CE493F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=6, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 13:23:13 TEST postfix/smtp[7488]: D5CE493F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=6, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 13:23:14 TEST postfix/smtp[7488]: D5CE493F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=6, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 13:23:15 TEST postfix/smtp[7488]: D5CE493F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=6, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 13:23:16 TEST postfix/smtp[7488]: D5CE493F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=6, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 13:23:17 TEST postfix/smtp[7488]: D5CE493F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=6, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 13:23:18 TEST postfix/cleanup[7487]: CCBB893F81: message-id=<20060524072318.CCBB893F81@TEST.lab.ru>
+May 24 13:23:18 TEST postfix/qmgr[7086]: CCBB893F81: from=<>, size=4044, nrcpt=1 (queue active)
+May 24 13:23:18 TEST postfix/qmgr[7086]: D5CE493F7F: removed
+May 24 13:23:18 TEST postfix/smtpd[7485]: disconnect from localhost.localdomain[127.0.0.1]
+May 24 13:23:42 TEST postfix/smtp[7488]: connect to ezagenda.com[202.123.209.182]: Connection timed out (port 25)
+May 24 13:23:42 TEST postfix/smtp[7488]: CCBB893F81: to=<kai-yuen@ezagenda.com>, relay=none, delay=31, status=deferred (connect to ezagenda.com[202.123.209.182]: Connection timed out)
+May 24 13:33:25 TEST postfix/smtpd[7510]: connect from localhost.localdomain[127.0.0.1]
+May 24 13:33:26 TEST postfix/smtpd[7510]: 040FF93F7F: client=localhost.localdomain[127.0.0.1]
+May 24 13:33:26 TEST postfix/cleanup[7512]: 040FF93F7F: message-id=<524701c67f0a$f952e711$85f77d0f@aba.com>
+May 24 13:33:26 TEST postfix/qmgr[7086]: 040FF93F7F: from=<03hsiuwen@aba.com>, size=26502, nrcpt=1 (queue active)
+May 24 13:33:32 TEST postfix/smtp[7513]: 040FF93F7F: to=<root@localhost.lab.ru>, orig_to=<root@localhost>, relay=localhost.lab.ru[194.135.30.57], delay=7, status=bounced (host localhost.lab.ru[194.135.30.57] said: 550 5.7.1 <root@localhost.lab.ru>... Relaying denied (in reply to RCPT TO command))
+May 24 13:33:32 TEST postfix/cleanup[7512]: 2B52093F83: message-id=<20060524073332.2B52093F83@TEST.lab.ru>
+May 24 13:33:32 TEST postfix/qmgr[7086]: 2B52093F83: from=<>, size=3993, nrcpt=1 (queue active)
+May 24 13:33:32 TEST postfix/qmgr[7086]: 040FF93F7F: removed
+May 24 13:33:34 TEST postfix/smtpd[7510]: disconnect from localhost.localdomain[127.0.0.1]
+May 24 13:33:35 TEST postfix/qmgr[7086]: 2B52093F83: removed
