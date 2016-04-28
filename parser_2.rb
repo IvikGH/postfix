@@ -1,4 +1,5 @@
 require 'json'
+require 'byebug'
 
 class Parser
   attr_accessor :data
@@ -27,25 +28,32 @@ class Parser
   end
 
   def parse_bounce
-    match = nil
-    regexps.each do |name, regex|
-      match = regex.match(data)
-      break if match
-    end
+    get_log_data
 
-    if match
-      convert_to_json(match)
+    if data
+      get_match_data.to_json
     else
       raise "No regex for this line."
     end
   end
 
-  def convert_to_json(match)
+  def get_log_data
+    match = nil
+    regexps.each do |name, regex|
+      match = regex.match(@data)
+      if match
+        @data = match
+        break
+      end
+    end
+  end
+
+  def get_match_data
     hash_bounce = {}
 
-    match.names.each do |key|
-      hash_bounce[key] = match[key]
+    data.names.each do |key|
+      hash_bounce[key] = data[key]
     end
-    hash_bounce.to_json
+    @data = hash_bounce
   end
 end

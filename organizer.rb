@@ -1,4 +1,4 @@
-require_relative 'parser'
+require_relative 'parser_2'
 require_relative 'sender'
 
 class Organizer
@@ -11,28 +11,28 @@ class Organizer
   end
 
   def process_bounces
+    sender = Sender.new
+
     loop do
       get_bounces_json
-      while @jsons.size >= 10
-        result = Sender.new.process(jsons[0,10])
-        @jsons = @jsons.drop(10) if result
-      end
+      sender.process(jsons)
+      @jsons.clear
       sleep 5
     end
   end
 
-  def bounce?(line)
-    !(/status=bounced/.match(line).nil?)
-  end
+
 
   def get_bounces_json
     file = File.new(filename)
     parser = Parser.new
 
-    file.each do |line|
-      jsons << parser.parse_bounce(line) if bounce?(line)
+    file.each do |log_line|
+      parser.data = log_line
+      jsons << parser.parse_bounce if parser.bounce_line?
     end
+    file.close
 
-    File.open(filename,"w") { |file| file.write('') }
+    File.new(filename,"w+")
   end
 end
