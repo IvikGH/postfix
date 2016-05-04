@@ -1,20 +1,27 @@
 class Sender
   attr_accessor :jsons
 
+  PACK_SIZE = 10
+
   def initialize
     @jsons = []
   end
 
-  def process(new_jsons)
-    @jsons += new_jsons
-    while @jsons.size >= 10
-      result = send(jsons[0,10])
-      @jsons = @jsons.drop(10) if result
+  def process_data(new_jsons=nil)
+    if new_jsons
+      @jsons += new_jsons
+      while @jsons.size >= PACK_SIZE
+        result = send(jsons[0,PACK_SIZE])
+        @jsons = @jsons.drop(PACK_SIZE) if result
+      end
+    else
+      send(@jsons)
     end
   end
 
   def send(jsons)
-    p jsons
+    # p '. . . sending json data'
+    # p @jsons
     if true # < < < true подтверждение об успешной доставке
       return true
     else
